@@ -2,6 +2,13 @@
 
 End-to-end analysis of why telecom customers leave: **Python → MySQL → SQL → Power BI**, ending in business recommendations.
 
+## About this project
+I wanted one project that covers the whole analyst workflow, from messy raw data to a recommendation someone could act on, instead of just making a few charts.
+
+The hardest part was keeping the numbers consistent. Once I decided to leave out the 454 customers who had just joined, I had to apply that rule in SQL and on every Power BI page. I missed it on one page, and San Diego showed 64.91% instead of 66.55%. Checking my page against my SQL results is how I caught it.
+
+What I learned: define the metric first, be careful with small groups (so the city chart only shows cities with 30+ customers), and remember that these findings show patterns, not proof of cause. The recommendations should be tested before a full rollout.
+
 ## Key result
 **28.37% churn** (1,869 of 6,589 customers), about **$3.68M revenue lost**. The highest-risk group (Month-to-Month + Fiber Optic + first 12 months) churns at **81.67%**.
 Full findings: [insights_and_recommendations.md](insights_and_recommendations.md)
