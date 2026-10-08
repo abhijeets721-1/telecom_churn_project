@@ -18,6 +18,9 @@ Full findings: [insights_and_recommendations.md](insights_and_recommendations.md
 |---|---|---|
 | ![Overview](dashboard/screenshots/overview.png) | ![Why and who](dashboard/screenshots/why_and_who.png) | ![Where and what next](dashboard/screenshots/where_and_next.png) |
 
+## Data
+The dataset is the [Telecom Customer Churn dataset](https://mavenanalytics.io/data-playground/telecom-customer-churn) from Maven Analytics' Data Playground (listed there as Public Domain; original source: IBM Cognos Analytics). It contains 7,043 customers plus a zip code population table.
+
 ## Pipeline
 1. **Clean (Python, pandas)** – `notebooks/churn_analysis.ipynb` cleans the raw data and exports `telecom_churn_cleaned.csv` (7,043 rows).
 2. **Load (MySQL)** – the cleaned data is loaded into a MySQL table from the notebook.
